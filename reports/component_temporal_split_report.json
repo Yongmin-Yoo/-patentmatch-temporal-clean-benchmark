@@ -1,0 +1,79 @@
+{
+  "status": "COMPONENT_TEMPORAL_SPLIT_COMPLETE",
+  "input_rows": 25276,
+  "components": 1486,
+  "train_dev_cutoff": "2016-09-25",
+  "dev_test_cutoff": "2017-05-13",
+  "splits": {
+    "train": {
+      "rows": 16928,
+      "components": 1059,
+      "applications": 1138,
+      "cited_documents": 2437,
+      "positive": 8470,
+      "negative": 8458,
+      "positive_rate": 0.5003544423440454,
+      "min_date": "2012-07-04",
+      "max_date": "2016-09-21"
+    },
+    "dev": {
+      "rows": 3652,
+      "components": 190,
+      "applications": 197,
+      "cited_documents": 441,
+      "positive": 1826,
+      "negative": 1826,
+      "positive_rate": 0.5,
+      "min_date": "2016-09-28",
+      "max_date": "2017-05-10"
+    },
+    "test": {
+      "rows": 3650,
+      "components": 214,
+      "applications": 224,
+      "cited_documents": 494,
+      "positive": 1828,
+      "negative": 1822,
+      "positive_rate": 0.5008219178082192,
+      "min_date": "2017-05-17",
+      "max_date": "2018-01-31"
+    },
+    "quarantine": {
+      "rows": 1046,
+      "components": 23,
+      "applications": 64,
+      "cited_documents": 117,
+      "positive": 523,
+      "negative": 523,
+      "positive_rate": 0.5,
+      "min_date": "2012-11-07",
+      "max_date": "2018-01-03"
+    }
+  },
+  "kept_rows": 24230,
+  "quarantined_rows": 1046,
+  "quarantine_rate": 0.04138313024212692,
+  "identity_overlap_total": 0,
+  "strict_temporal_order": true,
+  "overlap_details": {
+    "train_vs_dev::claim_id": 0,
+    "train_vs_dev::patent_application_id": 0,
+    "train_vs_dev::cited_document_id": 0,
+    "train_vs_dev::_claim_text_hash": 0,
+    "train_vs_dev::_passage_text_hash": 0,
+    "train_vs_dev::_supercomponent_id": 0,
+    "train_vs_test::claim_id": 0,
+    "train_vs_test::patent_application_id": 0,
+    "train_vs_test::cited_document_id": 0,
+    "train_vs_test::_claim_text_hash": 0,
+    "train_vs_test::_passage_text_hash": 0,
+    "train_vs_test::_supercomponent_id": 0,
+    "dev_vs_test::claim_id": 0,
+    "dev_vs_test::patent_application_id": 0,
+    "dev_vs_test::cited_document_id": 0,
+    "dev_vs_test::_claim_text_hash": 0,
+    "dev_vs_test::_passage_text_hash": 0,
+    "dev_vs_test::_supercomponent_id": 0
+  },
+  "recommendation": "GO_COMPONENT_TEMPORAL_CLEAN_SPLIT"
+}
