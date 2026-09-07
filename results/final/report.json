@@ -1,0 +1,46 @@
+{
+  "status": "FINAL_AUTOMATIC_RESULTS_PACKAGE_COMPLETE",
+  "created_at_utc": "2026-09-07T01:44:02.380239+00:00",
+  "elapsed_seconds_before_sync": 60.31350493431091,
+  "task_framing": {
+    "primary": "temporal_component_clean_X_vs_A_claim_passage_classification",
+    "auxiliary": "exact_claim_text_pairwise_discrimination",
+    "not_claimed": "full_corpus_first_stage_retrieval"
+  },
+  "label_semantics": {
+    "1": "X citation: novelty-prejudicial or highly relevant passage",
+    "0": "A citation: technological background or general state of the art"
+  },
+  "license": "CC-BY-4.0",
+  "source_paper": "https://arxiv.org/abs/2012.13919",
+  "source_project": "https://hpi.de/naumann/s/patentmatch",
+  "data": {
+    "retained_pairs": 24230,
+    "exact_text_query_groups": 12026,
+    "multi_date_query_groups": 71,
+    "train_rows": 16928,
+    "dev_rows": 3652,
+    "test_rows": 3650
+  },
+  "best_dev_pairwise": {
+    "method": "MSMARCO_MINILM_CROSS_ENCODER",
+    "score": 0.5502195389681669
+  },
+  "best_test_pairwise_numerical": {
+    "method": "TFIDF",
+    "score": 0.5261707988980716
+  },
+  "best_test_roc_auc_numerical": {
+    "method": "MINILM_ZERO_SHOT",
+    "score": 0.5226371037669908
+  },
+  "outputs": {
+    "baseline_comparison": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/baseline_comparison.csv",
+    "corrected_year_metrics": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/corrected_year_metrics.csv",
+    "multi_date_query_audit": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/multi_date_query_audit.csv",
+    "dataset_card": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/DATASET_CARD_DRAFT.md",
+    "benchmark_status": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/BENCHMARK_STATUS.md",
+    "report_json": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.json",
+    "report_txt": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.txt"
+  }
+}
