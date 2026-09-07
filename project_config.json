@@ -1,0 +1,23 @@
+{
+  "project_name": "PatentMatch Temporal-Clean Benchmark Extension",
+  "status": "private_development",
+  "upstream_dataset": "PatentMatch",
+  "upstream_repository": "https://github.com/julian-risch/PatentMatch",
+  "upstream_paper": "https://arxiv.org/abs/2012.13919",
+  "benchmark_types": [
+    "pair_classification",
+    "pairwise_passage_ranking",
+    "pairwise_document_ranking",
+    "claim_element_annotation"
+  ],
+  "release_text_data": false,
+  "license_status": "redistribution_review_required",
+  "splits": {
+    "train_rows": 16928,
+    "dev_rows": 3652,
+    "test_rows": 3650,
+    "quarantine_rows": 1046
+  },
+  "test_queries": 1815,
+  "cross_split_identity_overlap": 0
+}
