@@ -1,0 +1,104 @@
+{
+  "status": "OFFICIAL_SPLIT_AUDIT_COMPLETE",
+  "created_at_utc": "2026-09-07T23:59:13.450711+00:00",
+  "official_raw_rows": {
+    "train": 20272,
+    "test": 5068,
+    "total": 25340
+  },
+  "clean_rows": 25276,
+  "removed_during_cleaning": 64,
+  "xart_rows": {
+    "train": 16928,
+    "dev": 3652,
+    "test": 3650,
+    "quarantine": 1046
+  },
+  "official_component_crossing": {
+    "group_type": "Structural supercomponent",
+    "total_groups": 1486,
+    "cross_split_groups": 20,
+    "cross_split_group_rate": 0.013458950201884253,
+    "affected_rows": 916,
+    "affected_train_rows": 468,
+    "affected_test_rows": 448,
+    "affected_test_row_rate": 0.08860759493670886,
+    "affected_test_claim_ids": 448,
+    "affected_test_exact_queries": 224
+  },
+  "official_exact_query_crossing": {
+    "group_type": "Exact claim text",
+    "total_groups": 12531,
+    "cross_split_groups": 17,
+    "cross_split_group_rate": 0.0013566355438512489,
+    "affected_rows": 70,
+    "affected_train_rows": 36,
+    "affected_test_rows": 34,
+    "affected_test_row_rate": 0.006724683544303798,
+    "affected_test_claim_ids": 34,
+    "affected_test_exact_queries": 17
+  },
+  "official_vs_xart_test_overlap": {
+    "official_raw_test_rows": 5068.0,
+    "official_clean_test_rows": 5056.0,
+    "xart_test_rows": 3650.0,
+    "shared_test_rows": 3650.0,
+    "official_clean_test_covered_by_xart": 0.7219145569620253,
+    "xart_test_from_official_test": 1.0,
+    "official_test_not_in_xart_test": 1406.0,
+    "xart_test_not_from_official_test": 0.0
+  },
+  "date_ranges": [
+    {
+      "split_definition": "PatentMatch official",
+      "split": "original_test",
+      "count": 5056,
+      "min": "2017-03-08",
+      "max": "2018-01-31"
+    },
+    {
+      "split_definition": "PatentMatch official",
+      "split": "original_train",
+      "count": 20220,
+      "min": "2012-07-04",
+      "max": "2017-03-08"
+    },
+    {
+      "split_definition": "XART",
+      "split": "dev",
+      "count": 3652,
+      "min": "2016-09-28",
+      "max": "2017-05-10"
+    },
+    {
+      "split_definition": "XART",
+      "split": "quarantine",
+      "count": 1046,
+      "min": "2012-11-07",
+      "max": "2018-01-03"
+    },
+    {
+      "split_definition": "XART",
+      "split": "test",
+      "count": 3650,
+      "min": "2017-05-17",
+      "max": "2018-01-31"
+    },
+    {
+      "split_definition": "XART",
+      "split": "train",
+      "count": 16928,
+      "min": "2012-07-04",
+      "max": "2016-09-21"
+    }
+  ],
+  "input_hashes": {
+    "official_train_sha256": "45d0fde26a13bef820b0de07b3724904c1ccc7da5a23a1675d3e4c3080713290",
+    "official_test_sha256": "9ea9d6397fe7a6bad5ca76dce3d92fb47583a3c97e3c6b363439426e9db73165",
+    "xart_train_sha256": "7e57dda8560958e55738f79342e5e5623086b97b63207289bcf72b4896f79bc2",
+    "xart_dev_sha256": "b848b591620559c233f2b710d0bd5badd79d65d944d21eedd6da33ff93986869",
+    "xart_test_sha256": "ace89125c8fd16d0e2de4854f3d6d6550d58e963236e1373d36e294bb1dab42a",
+    "xart_quarantine_sha256": "cc755cf88674370d795d6a317529ffa776a0f2352c34e7d54b95f7835904d268"
+  },
+  "release_scope": "Aggregate statistics only. No patent claim or passage text is exported."
+}

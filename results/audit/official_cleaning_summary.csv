@@ -1,0 +1,4 @@
+source_split,raw_rows,clean_rows,removed_rows,retention_rate
+original_train,20272,20220,52,0.9974348855564326
+original_test,5068,5056,12,0.9976322020520916
+total,25340,25276,64,0.9974743488555643

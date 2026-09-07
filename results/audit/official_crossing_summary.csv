@@ -1,0 +1,3 @@
+group_type,total_groups,cross_split_groups,cross_split_group_rate,affected_rows,affected_train_rows,affected_test_rows,affected_test_row_rate,affected_test_claim_ids,affected_test_exact_queries
+Structural supercomponent,1486,20,0.013458950201884253,916,468,448,0.08860759493670886,448,224
+Exact claim text,12531,17,0.0013566355438512489,70,36,34,0.006724683544303798,34,17

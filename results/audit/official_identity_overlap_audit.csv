@@ -1,0 +1,7 @@
+identity_type,train_unique,test_unique,shared_unique,shared_rate_test,affected_train_rows,affected_test_rows,affected_test_row_rate,affected_test_claim_ids,affected_test_exact_queries
+Claim ID,20220,5056,0,0.0,0,0,0.0,0,0
+Patent application,1324,300,1,0.0033333333333333335,10,2,0.00039556962025316455,2,1
+Cited document,2846,675,32,0.047407407407407405,246,283,0.055973101265822785,283,204
+Exact claim text,10030,2518,17,0.006751389992057188,36,34,0.006724683544303798,34,17
+Exact passage text,12385,2976,34,0.0114247311827957,51,52,0.010284810126582278,52,44
+Structural supercomponent,1219,287,20,0.06968641114982578,468,448,0.08860759493670886,448,224
