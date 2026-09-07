@@ -1,0 +1,35 @@
+{
+  "status": "PHASE1_PACKAGE_COMPLETE",
+  "created_at_utc": "2026-09-07T00:30:12.530066+00:00",
+  "source_file": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/split_annotation_audit/annotation_blind_100_annotator_A.csv",
+  "input_pair_count": 100,
+  "unique_claim_count": 100,
+  "duplicate_claim_instances": 0,
+  "max_elements": 15,
+  "claim_column": "claim_text",
+  "labels_included": false,
+  "prior_art_passages_included": false,
+  "annotator_order_randomized_independently": true,
+  "workbook_A": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/phase1_claim_elements_annotator_A.xlsx",
+  "workbook_B": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/phase1_claim_elements_annotator_B.xlsx",
+  "pair_mapping_file": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/pair_to_claim_group_mapping.csv",
+  "claim_manifest_file": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/claim_group_manifest.csv",
+  "verification_A": {
+    "rows": 100,
+    "sheets": [
+      "Instructions",
+      "Claim Elements",
+      "Pair Mapping"
+    ],
+    "forbidden_fields": []
+  },
+  "verification_B": {
+    "rows": 100,
+    "sheets": [
+      "Instructions",
+      "Claim Elements",
+      "Pair Mapping"
+    ],
+    "forbidden_fields": []
+  }
+}
