@@ -1,0 +1,75 @@
+PATENTMATCH CLAIM-LEVEL RETRIEVAL FEASIBILITY AUDIT
+
+STATUS: RETRIEVAL_FEASIBILITY_AUDIT_COMPLETE
+
+DATA QUALITY
+- Total rows: 24,230
+- Total unique claim queries: 12,026
+- Empty claim rows: 0
+- Empty passage rows: 0
+- Empty document-ID rows: 0
+- Invalid label rows: 0
+- Exact duplicate pair rows: 0
+- Document label conflicts: 13
+
+CROSS-SPLIT AUDIT
+- Cross-split identical claim queries: 0
+- Rows belonging to cross-split queries: 0
+- _claim_id_clean: train/dev=0, train/test=0, dev/test=0
+- _application_id_clean: train/dev=0, train/test=0, dev/test=0
+- _document_id_clean: train/dev=0, train/test=0, dev/test=0
+- _claim_hash: train/dev=0, train/test=0, dev/test=0
+- _passage_hash: train/dev=0, train/test=0, dev/test=0
+
+RETRIEVAL FEASIBILITY
+- TRAIN:
+  rows: 16,928
+  queries: 8,389
+  passage-ranking eligible: 8,381/8,389 (99.90%)
+  document-ranking eligible: 8,375/8,389 (99.83%)
+  passage candidates/query: mean=2.02, median=2.0, p90=2.0, max=8
+  documents/query: mean=2.00, median=2.0, p90=2.0, max=4
+  all-positive queries: 7
+  all-negative queries: 1
+  single-passage queries: 8
+  single-document queries: 9
+- DEV:
+  rows: 3,652
+  queries: 1,822
+  passage-ranking eligible: 1,822/1,822 (100.00%)
+  document-ranking eligible: 1,822/1,822 (100.00%)
+  passage candidates/query: mean=2.00, median=2.0, p90=2.0, max=4
+  documents/query: mean=2.00, median=2.0, p90=2.0, max=3
+  all-positive queries: 0
+  all-negative queries: 0
+  single-passage queries: 0
+  single-document queries: 0
+- TEST:
+  rows: 3,650
+  queries: 1,815
+  passage-ranking eligible: 1,815/1,815 (100.00%)
+  document-ranking eligible: 1,815/1,815 (100.00%)
+  passage candidates/query: mean=2.01, median=2.0, p90=2.0, max=5
+  documents/query: mean=2.00, median=2.0, p90=2.0, max=2
+  all-positive queries: 0
+  all-negative queries: 0
+  single-passage queries: 0
+  single-document queries: 0
+
+DECISION
+- Retrieval recommendation: STRONG_GO_PASSAGE_RETRIEVAL_BENCHMARK
+- Document recommendation: DOCUMENT_LEVEL_RANKING_FEASIBLE
+
+INTERPRETATION
+- Existing claim groups contain sufficient mixed positive/negative candidates.
+- Proceed with TF-IDF/BM25, dense, and cross-encoder ranking baselines.
+- Tune only on train/dev and evaluate test once.
+
+SAVED FILES
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/claim_task_audit.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/document_label_conflicts.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/duplicate_candidate_pairs.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/ranking_pairs_clean.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/ranking_qrels.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/report.json
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/report.txt
