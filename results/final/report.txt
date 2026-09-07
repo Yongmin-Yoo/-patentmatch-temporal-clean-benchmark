@@ -1,0 +1,69 @@
+PATENTMATCH FINAL AUTOMATIC RESULTS PACKAGE
+
+STATUS: FINAL_AUTOMATIC_RESULTS_PACKAGE_COMPLETE
+
+TASK FRAMING
+- Primary: temporal/component-clean X-vs-A claim-passage classification
+- Auxiliary: exact-claim-text pairwise discrimination
+- Not claimed: full-corpus first-stage retrieval
+
+LABELS AND LICENSE
+- Label 1: X citation, novelty-prejudicial or highly relevant
+- Label 0: A citation, technological background/general state of art
+- Dataset license: CC BY 4.0
+
+DATA
+- Retained pairs: 24,230
+- Exact-claim-text groups: 12,026
+- Multi-date exact-text groups: 71
+- Multi-date groups excluded from year-specific ranking: True
+
+BASELINE COMPARISON
+- DEV:
+  TFIDF: Accuracy=0.5334, Macro-F1=0.5333, ROC-AUC=0.5332, Pairwise=0.5291, MRR=0.7643, nDCG=0.8260
+  BM25: Accuracy=0.5230, Macro-F1=0.5226, ROC-AUC=0.5204, Pairwise=0.5231, MRR=0.7613, nDCG=0.8237
+  MINILM_ZERO_SHOT: Accuracy=0.5194, Macro-F1=0.5193, ROC-AUC=0.5224, Pairwise=0.5318, MRR=0.7658, nDCG=0.8271
+  PATENTSBERTA_ZERO_SHOT: Accuracy=0.5222, Macro-F1=0.5221, ROC-AUC=0.5176, Pairwise=0.5209, MRR=0.7602, nDCG=0.8230
+  MSMARCO_MINILM_CROSS_ENCODER: Accuracy=0.5222, Macro-F1=0.5207, ROC-AUC=0.5273, Pairwise=0.5502, MRR=0.7745, nDCG=0.8336
+- TEST:
+  TFIDF: Accuracy=0.5137, Macro-F1=0.5137, ROC-AUC=0.5154, Pairwise=0.5262, MRR=0.7631, nDCG=0.8252
+  BM25: Accuracy=0.5088, Macro-F1=0.5078, ROC-AUC=0.5105, Pairwise=0.5140, MRR=0.7579, nDCG=0.8212
+  MINILM_ZERO_SHOT: Accuracy=0.5219, Macro-F1=0.5218, ROC-AUC=0.5226, Pairwise=0.5113, MRR=0.7556, nDCG=0.8196
+  PATENTSBERTA_ZERO_SHOT: Accuracy=0.5047, Macro-F1=0.5041, ROC-AUC=0.5076, Pairwise=0.5003, MRR=0.7501, nDCG=0.8155
+  MSMARCO_MINILM_CROSS_ENCODER: Accuracy=0.5181, Macro-F1=0.5162, ROC-AUC=0.5206, Pairwise=0.5072, MRR=0.7534, nDCG=0.8179
+
+BEST NUMERICAL RESULTS
+- Best development pairwise method: MSMARCO_MINILM_CROSS_ENCODER (0.5502)
+- Best test pairwise method: TFIDF (0.5262)
+- Best test ROC-AUC method: MINILM_ZERO_SHOT (0.5226)
+
+CORRECTED YEAR-SPECIFIC AUXILIARY RESULTS
+- TFIDF:
+  year=2017, queries=1,684, pairwise=0.5297, AUC=0.5156
+  year=2018, queries=122, pairwise=0.4754, AUC=0.4904
+- BM25:
+  year=2017, queries=1,684, pairwise=0.5172, AUC=0.5110
+  year=2018, queries=122, pairwise=0.4590, AUC=0.4895
+- MINILM_ZERO_SHOT:
+  year=2017, queries=1,684, pairwise=0.5119, AUC=0.5195
+  year=2018, queries=122, pairwise=0.4672, AUC=0.5081
+- PATENTSBERTA_ZERO_SHOT:
+  year=2017, queries=1,684, pairwise=0.5065, AUC=0.5062
+  year=2018, queries=122, pairwise=0.3934, AUC=0.5054
+- MSMARCO_MINILM_CROSS_ENCODER:
+  year=2017, queries=1,684, pairwise=0.5098, AUC=0.5220
+  year=2018, queries=122, pairwise=0.4508, AUC=0.4824
+
+INTERPRETATION
+- Lexical, zero-shot dense, patent-domain dense, and supervised cross-encoder baselines remain close to random on the temporal test split.
+- Current evidence supports benchmark difficulty, but does not prove that temporal distribution shift is the sole cause.
+- Human claim-element and evidence-span annotation is the next substantive research step.
+
+SAVED FILES
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/baseline_comparison.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/corrected_year_metrics.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/multi_date_query_audit.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/DATASET_CARD_DRAFT.md
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/BENCHMARK_STATUS.md
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.json
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.txt
