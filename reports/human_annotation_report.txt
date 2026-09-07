@@ -1,0 +1,33 @@
+PATENTMATCH PHASE 1 — DOUBLE-BLIND CLAIM ELEMENT DECOMPOSITION
+
+STATUS: PHASE1_PACKAGE_COMPLETE
+
+INPUT
+- Source file: /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/split_annotation_audit/annotation_blind_100_annotator_A.csv
+- Input annotation pairs: 100
+- Unique claims: 100
+- Duplicate claim instances: 0
+
+ANNOTATION DESIGN
+- Independent annotators: 2
+- Maximum elements per claim: 15
+- A/B row order independently randomized: True
+- PatentMatch labels included: False
+- Prior-art passages included: False
+- Claim text included: True
+
+OUTPUTS
+- Annotator A: /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/phase1_claim_elements_annotator_A.xlsx
+- Annotator B: /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/phase1_claim_elements_annotator_B.xlsx
+- Pair mapping: /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/pair_to_claim_group_mapping.csv
+- Claim manifest: /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/claim_group_manifest.csv
+- Manifest: /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/manifest.json
+- Report: /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/human_annotation_pilot/phase1_claim_decomposition/report.txt
+
+NEXT ACTION
+1. Send only the A workbook to Annotator A.
+2. Send only the B workbook to Annotator B.
+3. Both annotators independently decompose all claims.
+4. Do not expose labels or prior-art passages.
+5. Save the completed workbooks without changing filenames.
+6. After both are complete, run the agreement/alignment phase.
