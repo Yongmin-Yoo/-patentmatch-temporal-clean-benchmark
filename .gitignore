@@ -1,0 +1,20 @@
+# Data containing patent text
+data/
+*.parquet
+*.arrow
+*.zip
+*.xlsx
+
+# Local secrets
+.env
+*.key
+credentials.json
+service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Large/local artifacts
+repository_staging/
