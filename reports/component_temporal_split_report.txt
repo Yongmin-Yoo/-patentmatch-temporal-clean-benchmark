@@ -1,0 +1,53 @@
+================================================================================
+PATENTMATCH COMPONENT + TEMPORAL CLEAN SPLIT REPORT
+================================================================================
+Status: COMPONENT_TEMPORAL_SPLIT_COMPLETE
+
+INPUT
+Rows:                              25,276
+Strict super-components:           1,486
+
+TEMPORAL BOUNDARIES
+Train/dev cutoff:                  2016-09-25
+Dev/test cutoff:                   2017-05-13
+
+SPLITS
+Train:                             {'rows': 16928, 'components': 1059, 'applications': 1138, 'cited_documents': 2437, 'positive': 8470, 'negative': 8458, 'positive_rate': 0.5003544423440454, 'min_date': '2012-07-04', 'max_date': '2016-09-21'}
+Dev:                               {'rows': 3652, 'components': 190, 'applications': 197, 'cited_documents': 441, 'positive': 1826, 'negative': 1826, 'positive_rate': 0.5, 'min_date': '2016-09-28', 'max_date': '2017-05-10'}
+Test:                              {'rows': 3650, 'components': 214, 'applications': 224, 'cited_documents': 494, 'positive': 1828, 'negative': 1822, 'positive_rate': 0.5008219178082192, 'min_date': '2017-05-17', 'max_date': '2018-01-31'}
+Quarantine:                        {'rows': 1046, 'components': 23, 'applications': 64, 'cited_documents': 117, 'positive': 523, 'negative': 523, 'positive_rate': 0.5, 'min_date': '2012-11-07', 'max_date': '2018-01-03'}
+
+QUALITY
+Kept rows:                         24,230
+Quarantined rows:                  1,046
+Quarantine rate:                   0.0414
+Cross-split identity overlap:      0
+Strict temporal order:             True
+
+TEMPORAL CHECK
+Train max date:                    2016-09-21
+Dev min date:                      2016-09-28
+Dev max date:                      2017-05-10
+Test min date:                     2017-05-17
+
+RECOMMENDATION: GO_COMPONENT_TEMPORAL_CLEAN_SPLIT
+
+IMPORTANT
+- No application, cited document, claim ID, exact claim text, exact passage
+  text, or connected component appears across splits.
+- Components crossing a temporal boundary are quarantined.
+- The meaning of PatentMatch's date field still requires documentation
+  confirmation.
+- Patent-family IDs remain unavailable, so this is component-clean rather
+  than fully family-clean.
+
+SAVED FILES
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/train.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/dev.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/test.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/quarantine.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/component_manifest.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/row_split_manifest.csv
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/report.json
+- /content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split/report.txt
+================================================================================
