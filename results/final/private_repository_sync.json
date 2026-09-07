@@ -1,0 +1,88 @@
+{
+  "status": "PRIVATE_AGGREGATE_RESULTS_SYNC_COMPLETE",
+  "created_at_utc": "2026-09-07T01:44:23.137817+00:00",
+  "github_repository": "Yongmin-Yoo/-patentmatch-temporal-clean-benchmark",
+  "github_url": "https://github.com/Yongmin-Yoo/-patentmatch-temporal-clean-benchmark",
+  "github_private": true,
+  "github_files": [
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/baseline_comparison.csv",
+      "remote": "results/final/baseline_comparison.csv",
+      "status": "created"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/corrected_year_metrics.csv",
+      "remote": "results/final/corrected_year_metrics.csv",
+      "status": "created"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/multi_date_query_audit.csv",
+      "remote": "results/final/multi_date_query_audit.csv",
+      "status": "created"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/DATASET_CARD_DRAFT.md",
+      "remote": "DATASET_CARD_DRAFT.md",
+      "status": "created"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/BENCHMARK_STATUS.md",
+      "remote": "BENCHMARK_STATUS.md",
+      "status": "created"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.json",
+      "remote": "results/final/report.json",
+      "status": "created"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.txt",
+      "remote": "results/final/report.txt",
+      "status": "created"
+    }
+  ],
+  "huggingface_repository": "yongminyoo91/patentmatch-temporal-clean-benchmark",
+  "huggingface_url": "https://huggingface.co/datasets/yongminyoo91/patentmatch-temporal-clean-benchmark",
+  "huggingface_private": true,
+  "huggingface_files": [
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/baseline_comparison.csv",
+      "remote": "results/final/baseline_comparison.csv",
+      "status": "uploaded"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/corrected_year_metrics.csv",
+      "remote": "results/final/corrected_year_metrics.csv",
+      "status": "uploaded"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/multi_date_query_audit.csv",
+      "remote": "results/final/multi_date_query_audit.csv",
+      "status": "uploaded"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/DATASET_CARD_DRAFT.md",
+      "remote": "README.md",
+      "status": "uploaded"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/BENCHMARK_STATUS.md",
+      "remote": "BENCHMARK_STATUS.md",
+      "status": "uploaded"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.json",
+      "remote": "results/final/report.json",
+      "status": "uploaded"
+    },
+    {
+      "local": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/final_automatic_results/report.txt",
+      "remote": "results/final/report.txt",
+      "status": "uploaded"
+    }
+  ],
+  "patent_text_uploaded": false,
+  "human_annotation_workbooks_uploaded": false,
+  "private_hard_failure_file_uploaded": false,
+  "license_recorded": "CC-BY-4.0"
+}
