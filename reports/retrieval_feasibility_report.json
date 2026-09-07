@@ -1,0 +1,217 @@
+{
+  "status": "RETRIEVAL_FEASIBILITY_AUDIT_COMPLETE",
+  "created_at_utc": "2026-09-07T00:38:52.894354+00:00",
+  "input_directory": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/component_temporal_clean_split",
+  "total_rows": 24230,
+  "total_queries": 12026,
+  "empty_claim_rows": 0,
+  "empty_passage_rows": 0,
+  "empty_document_id_rows": 0,
+  "invalid_label_rows": 0,
+  "exact_duplicate_pair_rows": 0,
+  "document_label_conflicts": 13,
+  "cross_split_query_count": 0,
+  "cross_split_query_rows": 0,
+  "identity_overlap": {
+    "_claim_id_clean": {
+      "train_dev": 0,
+      "train_test": 0,
+      "dev_test": 0
+    },
+    "_application_id_clean": {
+      "train_dev": 0,
+      "train_test": 0,
+      "dev_test": 0
+    },
+    "_document_id_clean": {
+      "train_dev": 0,
+      "train_test": 0,
+      "dev_test": 0
+    },
+    "_claim_hash": {
+      "train_dev": 0,
+      "train_test": 0,
+      "dev_test": 0
+    },
+    "_passage_hash": {
+      "train_dev": 0,
+      "train_test": 0,
+      "dev_test": 0
+    }
+  },
+  "overall": {
+    "passage_ranking_eligible_queries": 12018,
+    "passage_ranking_eligible_rate": 0.9993347746549144,
+    "document_ranking_eligible_queries": 12012,
+    "document_ranking_eligible_rate": 0.9988358556461001
+  },
+  "splits": {
+    "train": {
+      "rows": 16928,
+      "queries": 8389,
+      "unique_applications": 1138,
+      "unique_documents": 2437,
+      "positive_rows": 8470,
+      "negative_rows": 8458,
+      "passage_ranking_eligible_queries": 8381,
+      "passage_ranking_eligible_rate": 0.9990463702467517,
+      "document_ranking_eligible_queries": 8375,
+      "document_ranking_eligible_rate": 0.9983311479318154,
+      "all_positive_queries": 7,
+      "all_negative_queries": 1,
+      "single_passage_candidate_queries": 8,
+      "single_document_candidate_queries": 9,
+      "passage_candidate_distribution": {
+        "min": 1,
+        "p25": 2.0,
+        "median": 2.0,
+        "p75": 2.0,
+        "p90": 2.0,
+        "max": 8,
+        "mean": 2.0178805578734056
+      },
+      "document_candidate_distribution": {
+        "min": 1,
+        "p25": 2.0,
+        "median": 2.0,
+        "p75": 2.0,
+        "p90": 2.0,
+        "max": 4,
+        "mean": 2.0011920371915606
+      },
+      "positive_passage_distribution": {
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 4,
+        "mean": 1.009655501251639
+      },
+      "negative_passage_distribution": {
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 4,
+        "mean": 1.0082250566217665
+      }
+    },
+    "dev": {
+      "rows": 3652,
+      "queries": 1822,
+      "unique_applications": 197,
+      "unique_documents": 441,
+      "positive_rows": 1826,
+      "negative_rows": 1826,
+      "passage_ranking_eligible_queries": 1822,
+      "passage_ranking_eligible_rate": 1.0,
+      "document_ranking_eligible_queries": 1822,
+      "document_ranking_eligible_rate": 1.0,
+      "all_positive_queries": 0,
+      "all_negative_queries": 0,
+      "single_passage_candidate_queries": 0,
+      "single_document_candidate_queries": 0,
+      "passage_candidate_distribution": {
+        "min": 2,
+        "p25": 2.0,
+        "median": 2.0,
+        "p75": 2.0,
+        "p90": 2.0,
+        "max": 4,
+        "mean": 2.004390779363337
+      },
+      "document_candidate_distribution": {
+        "min": 2,
+        "p25": 2.0,
+        "median": 2.0,
+        "p75": 2.0,
+        "p90": 2.0,
+        "max": 3,
+        "mean": 2.0010976948408343
+      },
+      "positive_passage_distribution": {
+        "min": 1,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 2,
+        "mean": 1.0021953896816684
+      },
+      "negative_passage_distribution": {
+        "min": 1,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 2,
+        "mean": 1.0021953896816684
+      }
+    },
+    "test": {
+      "rows": 3650,
+      "queries": 1815,
+      "unique_applications": 224,
+      "unique_documents": 494,
+      "positive_rows": 1828,
+      "negative_rows": 1822,
+      "passage_ranking_eligible_queries": 1815,
+      "passage_ranking_eligible_rate": 1.0,
+      "document_ranking_eligible_queries": 1815,
+      "document_ranking_eligible_rate": 1.0,
+      "all_positive_queries": 0,
+      "all_negative_queries": 0,
+      "single_passage_candidate_queries": 0,
+      "single_document_candidate_queries": 0,
+      "passage_candidate_distribution": {
+        "min": 2,
+        "p25": 2.0,
+        "median": 2.0,
+        "p75": 2.0,
+        "p90": 2.0,
+        "max": 5,
+        "mean": 2.0110192837465566
+      },
+      "document_candidate_distribution": {
+        "min": 2,
+        "p25": 2.0,
+        "median": 2.0,
+        "p75": 2.0,
+        "p90": 2.0,
+        "max": 2,
+        "mean": 2.0
+      },
+      "positive_passage_distribution": {
+        "min": 1,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 3,
+        "mean": 1.0071625344352617
+      },
+      "negative_passage_distribution": {
+        "min": 1,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "max": 2,
+        "mean": 1.0038567493112949
+      }
+    }
+  },
+  "recommendation": "STRONG_GO_PASSAGE_RETRIEVAL_BENCHMARK",
+  "document_recommendation": "DOCUMENT_LEVEL_RANKING_FEASIBLE",
+  "outputs": {
+    "task_audit": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/claim_task_audit.csv",
+    "document_label_conflicts": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/document_label_conflicts.csv",
+    "duplicate_candidate_pairs": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/duplicate_candidate_pairs.csv",
+    "ranking_pairs": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/ranking_pairs_clean.csv",
+    "ranking_qrels": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/ranking_qrels.csv",
+    "report_json": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/report.json",
+    "report_txt": "/content/drive/MyDrive/PatentSearchBench/external/PatentMatch/retrieval_feasibility_audit/report.txt"
+  }
+}
