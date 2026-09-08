@@ -1,0 +1,2 @@
+model,rows,ranking_queries,accuracy,macro_f1,roc_auc,average_precision,pairwise_accuracy
+MiniLM-CE seed 42,3650,1815,0.5112328767123288,0.5100938011322103,0.5266348627401057,0.5278785953624874,0.5331037649219468

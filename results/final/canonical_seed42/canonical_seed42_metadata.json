@@ -1,0 +1,49 @@
+{
+  "artifact": "Canonical MiniLM-CE seed-42 XART-temporal aggregate results",
+  "created_utc": "2026-09-08T05:46:08.646317+00:00",
+  "repository": "https://github.com/Yongmin-Yoo/-patentmatch-temporal-clean-benchmark",
+  "publication_scope": "Aggregate metrics only; pair-level parquet retained locally",
+  "seed": 42,
+  "test_rows": 3650,
+  "ranking_queries": 1815,
+  "alignment_verification": {
+    "canonical_to_manifest": "_row_id",
+    "aligned_to_canonical": [
+      "query_key",
+      "label",
+      "passage_length"
+    ],
+    "count_mismatch_groups": 0,
+    "aligned_duplicate_rows": 0,
+    "canonical_duplicate_rows": 0,
+    "status": "one-to-one verified"
+  },
+  "metrics_unrounded": {
+    "model": "MiniLM-CE seed 42",
+    "rows": 3650,
+    "ranking_queries": 1815,
+    "accuracy": 0.5112328767123288,
+    "macro_f1": 0.5100938011322103,
+    "roc_auc": 0.5266348627401057,
+    "average_precision": 0.5278785953624874,
+    "pairwise_accuracy": 0.5331037649219468
+  },
+  "paper_values_rounded": {
+    "accuracy": 0.5112,
+    "macro_f1": 0.5101,
+    "roc_auc": 0.5266,
+    "average_precision": 0.5279,
+    "pairwise_accuracy": 0.5331
+  },
+  "published_file": {
+    "name": "canonical_seed42_point_metrics.csv",
+    "size_bytes": 212,
+    "sha256": "7cc7aef7141ea99f79f085ead77191f1ffa93635234b103d3f18df9e6b0953f1"
+  },
+  "excluded_private_artifact": {
+    "name": "aligned_baseline_predictions_canonical_seed42.parquet",
+    "rows": 3650,
+    "sha256": "f5967c271cfeaff05b0c200f2b4d8b36f5cfc7d8010ceec6afadedb4f007cfa5",
+    "reason": "Pair-level artifact is not released through the public repository"
+  }
+}
